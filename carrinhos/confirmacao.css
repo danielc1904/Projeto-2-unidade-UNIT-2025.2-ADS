@@ -1,0 +1,55 @@
+@import url('../css/css.css');
+
+
+body {
+    background: #f7ecdc;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.confirmacao-container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.box {
+    background: white;
+    padding: 30px;
+    width: 40%;
+    margin: auto;
+    border-radius: 12px;
+}
+
+.linha-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.total {
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.botoes button {
+    padding: 12px 20px;
+    margin: 15px 10px;
+    border: none;
+    border-radius: 8px;
+    background: #6d421f;
+    color: white;
+    cursor: pointer;
+}
+
+.botoes .claro {
+    background: #f3e5c5;
+    color: #6d421f;
+}
+
+.footer {
+    margin-top: 80px;
+    background: #6d421f;
+    padding: 40px;
+    color: white;
+}

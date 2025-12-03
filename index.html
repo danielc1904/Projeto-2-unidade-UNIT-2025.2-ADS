@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Relicário — Demo</title>
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS separado -->
+  <link rel="stylesheet" href="./css/css.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo"><a href="../index.html">R</a></div>
+        <div class="name"><a href="../index.html">Relicário</a></div>
+      </div>
+
+      <div class="search">
+        <input aria-label="Buscar itens" placeholder="Buscar itens raros e históricos..." />
+      </div>
+
+      <nav class="nav-actions">
+        <div><a href="./catalogo/catalogo.html">Categorias</a></div>
+        <div><a href="./vendas/vendas.html">Vender</a></div>
+        <div class="icon"><a href="./carrinhos/carrinho.html">🛒</a></div>
+        <div class="icon">👤</div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="kicker">Marketplace de Itens Históricos</div>
+      <h1>Cada Peça Conta <span class="accent">Uma História</span></h1>
+      <p>Descubra tesouros do passado, conecte-se com colecionadores apaixonados e preserve memórias que transcendem o tempo.</p>
+
+      <div class="cta">
+        <button class="btn btn-primary"><a href="./catalogo/catalogo.html">Explorar Catálogo</a></button>
+        <button class="btn btn-outline"><a href="./vendas/vendas.html">Vender Item</a></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="wrap">
+      <div class="feature">
+        <div class="icon">🛡️</div>
+        <h3>Transações Seguras</h3>
+        <p>Proteção total em cada compra e venda</p>
+      </div>
+
+      <div class="feature">
+        <div class="icon">🔍</div>
+        <h3>Itens Verificados</h3>
+        <p>Curadoria especializada em autenticidade</p>
+      </div>
+
+      <div class="feature">
+        <div class="icon">📈</div>
+        <h3>Valorização</h3>
+        <p>Investimento em história e raridade</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories-section">
+    <div class="categories-inner">
+      <h2 class="section-title">Categorias Populares</h2>
+
+      <div class="categories-grid">
+        <a href="./catalogo/catalogo.html">
+          <div class="cat">
+            <div class="emoji">💰</div>
+            <div>
+              <h4>Numismática</h4>
+              <small>1247 itens</small>
+            </div>
+          </div>
+        </a>
+
+        <a href="./catalogo/catalogo.html">
+          <div class="cat">
+            <div class="emoji">🧸</div>
+            <div>
+              <h4>Brinquedos Antigos</h4>
+              <small>856 itens</small>
+            </div>
+          </div>
+        </a>
+
+        <a href="./catalogo/catalogo.html">
+          <div class="cat">
+            <div class="emoji">🎵</div>
+            <div>
+              <h4>Vinil e Música</h4>
+              <small>2134 itens</small>
+            </div>
+          </div>
+        </a>
+
+        <a href="./catalogo/catalogo.html">
+          <div class="cat">
+            <div class="emoji">📻</div>
+            <div>
+              <h4>Radiofonia</h4>
+              <small>423 itens</small>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="carousel-section">
+  <div class="products-header">
+    <h2 class="section-title left">Itens em Destaque</h2>
+  </div>
+
+  <div class="carousel-container">
+    <button class="carousel-btn prev">&#10094;</button>
+
+    <div class="carousel-track">
+      
+      <a href="./catalogo/catalogo.html">
+        <article class="carousel-item card">
+          <div class="media media-gold"> <img src="imagens/Screenshot_1.png"alt=""><div class="badge">Verificado</div></div>
+          <div class="card-body">
+            <span class="meta">Numismática</span>
+            <h5>Moeda Réis 1922 - Centenário da Independência</h5>
+            <div class="price">R$ 850</div>
+            <div class="meta">por Colecionador Premium</div>
+            <button class="btn-details">Ver Detalhes</button>
+          </div>
+        </article>
+      </a>
+
+      <a href="./catalogo/catalogo.html">
+        <article class="carousel-item card">
+          <div class="media media-vintage"><img src="imagens/Screenshot_2.png" alt=""><div class="badge">Verificado</div></div>
+          <div class="card-body">
+            <span class="meta">Brinquedos Antigos</span>
+            <h5>Carrinho de Lata Estrela Anos 60</h5>
+            <div class="price">R$ 320</div>
+            <div class="meta">por Vintage Toys BR</div>
+            <button class="btn-details">Ver Detalhes</button>
+          </div>
+        </article>
+      </a>
+
+      <a href="./catalogo/catalogo.html">
+        <article class="carousel-item card">
+          <div class="media media-dark"><img src="imagens/Screenshot_3.png" alt=""><div class="badge">Verificado</div></div>
+          <div class="card-body">
+            <span class="meta">Vinil e Música</span>
+            <h5>LP Vinil The Beatles - Abbey Road Original 1969</h5>
+            <div class="price">R$ 1.200</div>
+            <div class="meta">por Vinil Classics</div>
+            <button class="btn-details">Ver Detalhes</button>
+          </div>
+        </article>
+      </a>
+
+      <a href="./catalogo/catalogo.html">
+        <article class="carousel-item card">
+          <div class="media media-blue"><img src="imagens/Screenshot_4.png" alt=""></div>
+          <div class="card-body">
+            <span class="meta">Radiofonia</span>
+            <h5>Rádio Portátil Motorola Anos 70</h5>
+            <div class="price">R$ 450</div>
+            <div class="meta">por Rádio Relics</div>
+            <button class="btn-details">Ver Detalhes</button>
+          </div>
+        </article>
+      </a>
+
+      <a href="./catalogo/catalogo.html">
+        <article class="carousel-item card">
+          <div class="media media-paper"><img src="imagens/Screenshot_5.png" alt=""></div>
+          <div class="card-body">
+            <span class="meta">Numismática</span>
+            <h5>Cédula 1000 Cruzeiros 1990 - Estado de Conservação</h5>
+            <div class="price">R$ 180</div>
+            <div class="meta">por Numismática Total</div>
+            <button class="btn-details">Ver Detalhes</button>
+          </div>
+        </article>
+      </a>
+
+      <a href="./catalogo/catalogo.html">
+        <article class="carousel-item card">
+          <div class="media media-doll"><img src="imagens/Screenshot_6.png" alt=""></div>
+          <div class="card-body">
+            <span class="meta">Brinquedos Antigos</span>
+            <h5>Boneca Susi Estrela Anos 80 com Caixa Original</h5>
+            <div class="price">R$ 680</div>
+            <div class="meta">por Nostalgia Store</div>
+            <button class="btn-details">Ver Detalhes</button>
+          </div>
+        </article>
+      </a>
+
+    </div>
+
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">
+          <div class="logo small"><a href="./index.html">R</a></div>
+          <div class="footer-name"><a href="./index.html">Relicário</a></div>
+        </div>
+        <p>O marketplace de itens raros e históricos onde cada peça conta uma história.</p>
+      </div>
+
+      <div>
+        <h4>Links Rápidos</h4>
+        <p><a href="./index.html">Home</a><br><a href="./catalogo/catalogo.html">Catálogo</a><br><a href="./vendas/vendas.html">Vender Item</a><br><a href="#">Entrar</a></p>
+      </div>
+
+      <div>
+        <h4><a href="./catalogo/catalogo.html">Categorias</a></h4>
+        <p><a href="./catalogo/catalogo.html">Numismática</a><br><a href="./catalogo/catalogo.html">Brinquedos Antigos</a><br><a href="./catalogo/catalogo.html">Vinil e Música</a><br><a href="./catalogo/catalogo.html">Radiofonia</a></p>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <p>contato@relicario.com.br<br>(11) 9999-9999<br>São Paulo, Brasil</p>
+      </div>
+    </div>
+
+    <div class="legal">© 2025 Relicário. Todos os direitos reservados.</div>
+  </footer>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>

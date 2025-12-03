@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido - Relicário</title>
+    <link rel="stylesheet" href="..//carrinhos/finalizar.css">
+</head>
+<body>
+
+    <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo">R</div>
+        <div class="name">Relicário</div>
+      </div>
+
+      <div class="search">
+        <input aria-label="Buscar itens" placeholder="Buscar itens raros e históricos..." />
+      </div>
+
+      <nav class="nav-actions">
+        <div>Categorias</div>
+        <div>Vender</div>
+        <div class="icon">🛒</div>
+        <div class="icon">👤</div>
+      </nav>
+    </div>
+  </header>
+
+    <h2 class="title">Finalizar Pedido</h2>
+
+    <div class="content">
+
+        <!-- ENDEREÇO -->
+        <section class="endereco">
+            <h3>🏠 Endereço de Entrega</h3>
+
+            <label>CEP</label>
+            <div class="cep-box">
+                <input type="text" placeholder="00000-000">
+                <button class="buscar-cep">Buscar</button>
+            </div>
+
+            <label>Rua</label>
+            <input type="text" placeholder="Nome da rua">
+
+            <div class="linha">
+                <div>
+                    <label>Número</label>
+                    <input type="text" placeholder="123">
+                </div>
+                <div>
+                    <label>Complemento</label>
+                    <input type="text" placeholder="Opcional">
+                </div>
+            </div>
+
+            <label>Bairro</label>
+            <input type="text" placeholder="Bairro">
+
+            <div class="linha">
+                <div>
+                    <label>Cidade</label>
+                    <input type="text" placeholder="São Paulo">
+                </div>
+                <div>
+                    <label>Estado</label>
+                    <input type="text" placeholder="SP">
+                </div>
+            </div>
+        </section>
+
+        <!-- RESUMO -->
+        <aside class="resumo">
+            <h3>Resumo</h3>
+
+            <div class="item-resumo">
+                <img src="https://via.placeholder.com/80x80" alt="">
+                <div>
+                    <p>Moeda Réis 1922 - Centenário da Independência</p>
+                    <span>1x</span>
+                </div>
+                <strong>R$ 850</strong>
+            </div>
+
+            <div class="total-box">
+                <p>Subtotal <span>R$ 850</span></p>
+                <p>Frete <span class="gratis">Grátis</span></p>
+                <p class="total">Total <span>R$ 850</span></p>
+            </div>
+
+            <button class="btn-confirmar" onclick="confirmarPedido()">Confirmar Pedido</button>
+        </aside>
+
+    </div>
+
+    <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">
+          <div class="logo small"><a href="../index.html">R</a></div>
+          <div class="footer-name"><a href="../index.html">Relicário</a></div>
+        </div>
+        <p>O marketplace de itens raros e históricos onde cada peça conta uma história.</p>
+      </div>
+
+      <div>
+        <h4>Links Rápidos</h4>
+        <p><a href="../index.html">Home</a><br><a href="../catalogo/catalogo.html">Catálogo</a><br><a href="../vendas/vendas.html">Vender Item</a><br><a href="#">Entrar</a></p>
+      </div>
+
+      <div>
+        <h4><a href="../catalogo/catalogo.html">Categorias</a></h4>
+        <p><a href="../catalogo/catalogo.html">Numismática</a><br><a href="../catalogo/catalogo.html">Brinquedos Antigos</a><br><a href="../catalogo/catalogo.html">Vinil e Música</a><br><a href="../catalogo/catalogo.html">Radiofonia</a></p>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <p>contato@relicario.com.br<br>(11) 9999-9999<br>São Paulo, Brasil</p>
+      </div>
+    </div>
+
+    <div class="legal">© 2025 Relicário. Todos os direitos reservados.</div>
+  </footer>
+
+    <script src="../carrinhos/finalizar.js"></script>
+</body>
+</html>

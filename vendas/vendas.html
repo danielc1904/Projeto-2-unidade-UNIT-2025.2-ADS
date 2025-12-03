@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venda - Relic Rio</title>
+    <link rel="stylesheet" href="../vendas/vendas.css" />
+</head>
+<body>
+
+    <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo"><a href="../index.html">R</a></div>
+        <div class="name"><a href="../index.html">Relicário</a></div>
+      </div>
+
+      <div class="search">
+        <input aria-label="Buscar itens" placeholder="Buscar itens raros e históricos..." />
+      </div>
+
+      <nav class="nav-actions">
+        <div><a href="../catalogo/catalogo.html">Categorias</a></div>
+        <div><a href="../vendas/vendas.html">Vender</a></div>
+        <div class="icon"><a href="../carrinhos/carrinho.html">🛒</a></div>
+        <div class="icon">👤</div>
+      </nav>
+    </div>
+  </header>
+
+    <!-- CONTAINER -->
+    <main class="sell-container">
+        <h1 class="sell-title">Vender um Item</h1>
+
+        
+        <form id="sellForm">
+
+            
+            <section class="form-step active" data-step="1">
+                <h2>Selecione a categoria</h2>
+
+                <label>Categoria</label>
+                <select id="categoria" required>
+                    <option value="">Selecione</option>
+                    <option value="numismatica">Numismática</option>
+                    <option value="brinquedos">Brinquedos</option>
+                    <option value="vinil">Vinil</option>
+                    <option value="radiofonia">Radiofonia</option>
+                </select>
+
+                <label>Subcategoria</label>
+                <select id="subcategoria" required>
+                    <option value="">Selecione uma categoria primeiro</option>
+                </select>
+
+                <button type="button" class="btn-primary next-step">Próxima etapa</button>
+            </section>
+
+
+            
+            <section class="form-step" data-step="2">
+                <h2>Informações do item</h2>
+
+                <label>Título do anúncio</label>
+                <input type="text" id="titulo" required />
+
+                <label>Descrição</label>
+                <textarea id="descricao" rows="5" required></textarea>
+
+                <button type="button" class="btn-outline prev-step">Voltar</button>
+                <button type="button" class="btn-primary next-step">Próxima etapa</button>
+            </section>
+
+
+            
+            <section class="form-step" data-step="3">
+                <h2>Condição e Fotos</h2>
+
+                <label>Condição do item</label>
+                <select id="condicao" required>
+                    <option value="excelente">Excelente</option>
+                    <option value="muito-bom">Muito bom</option>
+                    <option value="bom">Bom</option>
+                    <option value="regular">Regular</option>
+                </select>
+
+                <label>Envie fotos do item</label>
+                <input type="file" id="fotos" accept="image/*" multiple />
+
+                <div class="preview-area" id="previewArea"></div>
+
+                <button type="button" class="btn-outline prev-step">Voltar</button>
+                <button type="submit" class="btn-primary"><a href="../index.html">Finalizar venda</a></button>
+            </section>
+        </form>
+    </main>
+
+    <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">
+          <div class="logo small"><a href="../index.html"><a href="../index.html">R</a></a></div>
+          <div class="footer-name"><a href="../index.html"><a href="../index.html">Relicário</a></a></div>
+        </div>
+        <p>O marketplace de itens raros e históricos onde cada peça conta uma história.</p>
+      </div>
+
+      <div>
+        <h4>Links Rápidos</h4>
+        <p><a href="../index.html">Home</a><br><a href="../catalogo/catalogo.html">Catálogo</a><br><a href="../vendas/vendas.html">Vender Item</a><br><a href="#">Entrar</a></p>
+      </div>
+
+      <div>
+        <h4><a href="../catalogo/catalogo.html">Categorias</a></h4>
+        <p><a href="../catalogo/catalogo.html">Numismática</a><br><a href="../catalogo/catalogo.html">Brinquedos Antigos</a><br><a href="../catalogo/catalogo.html">Vinil e Música</a><br><a href="../catalogo/catalogo.html">Radiofonia</a></p>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <p>contato@relicario.com.br<br>(11) 9999-9999<br>São Paulo, Brasil</p>
+      </div>
+    </div>
+
+    <div class="legal">© 2025 Relicário. Todos os direitos reservados.</div>
+  </footer>
+
+    <script src="../vendas/vendas.js"></script>
+</body>
+</html>

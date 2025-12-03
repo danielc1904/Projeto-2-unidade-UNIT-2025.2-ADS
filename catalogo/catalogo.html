@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Relicário — Catálogo</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../catalogo/catalogo.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="brand" aria-hidden>
+        <div class="logo"><a href="../index.html">R</a></div>
+        <div class="name"><a href="../index.html">Relicário</a></div>
+      </div>
+
+      <div class="search" role="search">
+        <input id="searchInput" aria-label="Buscar itens" placeholder="Buscar itens raros e históricos..." />
+      </div>
+
+      <nav class="nav-actions" aria-label="Ações">
+        <div> <span><a href="../catalogo/catalogo.html">Categorias</a></span> </div>
+        <div> <span><a href="../vendas/vendas.html">Vender</a></span> </div>
+        <div class="icon" title="Carrinho">🛒</div>
+        <div class="icon" title="Conta">👤</div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main layout: sidebar + content -->
+  <main class="catalog-layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="filters-header">
+        <h3>Filtros</h3>
+        <button id="clearFilters" class="clear-link">Limpar</button>
+      </div>
+
+      <div class="filter-block">
+        <div class="filter-title">CATEGORIA PRINCIPAL</div>
+        <label><input type="checkbox" name="category" value="Numismática"> Numismática</label>
+        <label><input type="checkbox" name="category" value="Brinquedos Antigos"> Brinquedos Antigos</label>
+        <label><input type="checkbox" name="category" value="Vinil e Música"> Vinil e Música</label>
+        <label><input type="checkbox" name="category" value="Radiofonia"> Radiofonia</label>
+      </div>
+
+      <div class="filter-block">
+        <div class="filter-title">PREÇO</div>
+        <label><input type="radio" name="price" value="0-50"> Até R$ 50</label>
+        <label><input type="radio" name="price" value="50-200"> R$ 50 - R$ 200</label>
+        <label><input type="radio" name="price" value="200-1000"> R$ 200 - R$ 1.000</label>
+        <label><input type="radio" name="price" value="1000+"> Acima de R$ 1.000</label>
+      </div>
+
+      <div class="filter-block">
+        <div class="filter-title">CONDIÇÃO</div>
+        <label><input type="checkbox" name="condition" value="Excelente"> Excelente <span class="small-count">(48)</span></label>
+        <label><input type="checkbox" name="condition" value="Muito bom"> Muito bom <span class="small-count">(156)</span></label>
+        <label><input type="checkbox" name="condition" value="Bom"> Bom <span class="small-count">(289)</span></label>
+      </div>
+    </aside>
+
+    <!-- CONTENT -->
+    <section class="content-area">
+      <div class="topbar">
+        <div class="results-count"><span id="resultsCount">0</span> itens encontrados</div>
+
+        <div class="controls">
+          <select id="sortSelect" aria-label="Ordenar">
+            <option value="relevance">Relevância</option>
+            <option value="price-asc">Preço: menor</option>
+            <option value="price-desc">Preço: maior</option>
+          </select>
+
+          <button id="gridView" class="view-toggle active" title="Grid view">▦</button>
+          <button id="listView" class="view-toggle" title="List view">☰</button>
+        </div>
+      </div>
+
+      <div id="productsGrid" class="products-grid">
+        <!-- Each card has data-* attributes to allow filtering/sorting -->
+        <!-- Card 1 -->
+        <article class="card fade-in" data-id="1" data-category="Numismática" data-price="850" data-condition="Excelente" data-title="Moeda Réis 1922" data-city="São Paulo - SP" data-vendor="Colecionador Premium">
+          <div class="media media-gold">
+            <img src="../imagens/Screenshot_1.png" alt="">
+            <div class="badge">Verificado</div>
+            <button class="fav-btn" title="Favoritar" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="card-body">
+            <span class="meta">Numismática</span>
+            <h5>Moeda Réis 1922 - Centenário da Independência</h5>
+            <div class="price">R$ 850</div>
+            <div class="meta small">por Colecionador Premium <span class="sep">•</span> São Paulo - SP</div>
+            <button class="btn-details">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card fade-in" data-id="2" data-category="Brinquedos Antigos" data-price="320" data-condition="Muito bom" data-title="Carrinho de Lata Estrela Anos 60" data-city="Rio de Janeiro - RJ" data-vendor="Vintage Toys BR">
+          <div class="media media-vintage">
+            <img src="../imagens/Screenshot_2.png" alt="">
+            <div class="badge">Verificado</div>
+            <button class="fav-btn" title="Favoritar" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="card-body">
+            <span class="meta">Brinquedos Antigos</span>
+            <h5>Carrinho de Lata Estrela Anos 60</h5>
+            <div class="price">R$ 320</div>
+            <div class="meta small">por Vintage Toys BR <span class="sep">•</span> Rio de Janeiro - RJ</div>
+            <button class="btn-details">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card fade-in" data-id="3" data-category="Vinil e Música" data-price="1200" data-condition="Excelente" data-title="LP Vinil The Beatles - Abbey Road Original 1969" data-city="Porto Alegre - RS" data-vendor="Vinil Classics">
+          <div class="media media-dark">
+            <img src="../imagens/Screenshot_3.png" alt="">
+            <div class="badge">Verificado</div>
+            <button class="fav-btn" title="Favoritar" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="card-body">
+            <span class="meta">Vinil e Música</span>
+            <h5>LP Vinil The Beatles - Abbey Road Original 1969</h5>
+            <div class="price">R$ 1.200</div>
+            <div class="meta small">por Vinil Classics <span class="sep">•</span> Porto Alegre - RS</div>
+            <button class="btn-details">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card fade-in" data-id="4" data-category="Radiofonia" data-price="450" data-condition="Bom" data-title="Rádio Portátil Motorola Anos 70" data-city="Curitiba - PR" data-vendor="Rádio Relics">
+          <div class="media media-blue">
+            <img src="../imagens/Screenshot_4.png" alt="">
+            <button class="fav-btn" title="Favoritar" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="card-body">
+            <span class="meta">Radiofonia</span>
+            <h5>Rádio Portátil Motorola Anos 70</h5>
+            <div class="price">R$ 450</div>
+            <div class="meta small">por Rádio Relics <span class="sep">•</span> Curitiba - PR</div>
+            <button class="btn-details">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card fade-in" data-id="5" data-category="Numismática" data-price="180" data-condition="Excelente" data-title="Cédula 1000 Cruzeiros 1990" data-city="Brasília - DF" data-vendor="Numismática Total">
+          <div class="media media-paper">
+            <img src="../imagens/Screenshot_5.png" alt="">
+            <div class="badge">Verificado</div>
+            <button class="fav-btn" title="Favoritar" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="card-body">
+            <span class="meta">Numismática</span>
+            <h5>Cédula 1000 Cruzeiros 1990 - Estado de Conservação</h5>
+            <div class="price">R$ 180</div>
+            <div class="meta small">por Numismática Total <span class="sep">•</span> Brasília - DF</div>
+            <button class="btn-details">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card fade-in" data-id="6" data-category="Brinquedos Antigos" data-price="680" data-condition="Muito bom" data-title="Boneca Susi Estrela Anos 80" data-city="Belo Horizonte - MG" data-vendor="Nostalgia Store">
+          <div class="media media-doll">
+            <img src="../imagens/Screenshot_6.png" alt="">
+            <div class="badge">Verificado</div>
+            <button class="fav-btn" title="Favoritar" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="card-body">
+            <span class="meta">Brinquedos Antigos</span>
+            <h5>Boneca Susi Estrela Anos 80 com Caixa Original</h5>
+            <div class="price">R$ 680</div>
+            <div class="meta small">por Nostalgia Store <span class="sep">•</span> Belo Horizonte - MG</div>
+            <button class="btn-details">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="card fade-in" data-id="7" data-category="Vinil e Música" data-price="890" data-condition="Muito bom" data-title="Disco Vinil Elvis Presley - Blue Hawaii 1961" data-city="Salvador - BA" data-vendor="Rock Vintage">
+          <div class="media" style="background:linear-gradient(90deg,#ff8cd1,#ffd24a)">
+            <img src="../imagens/Screenshot_7.png" alt="">
+            <div class="badge">Verificado</div>
+            <button class="fav-btn" title="Favoritar" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="card-body">
+            <span class="meta">Vinil e Música</span>
+            <h5>Disco Vinil Elvis Presley - Blue Hawaii 1961</h5>
+            <div class="price">R$ 890</div>
+            <div class="meta small">por Rock Vintage <span class="sep">•</span> Salvador - BA</div>
+            <button class="btn-details">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="card fade-in" data-id="8" data-category="Radiofonia" data-price="320" data-condition="Bom" data-title="Rádio Philco Transistore Anos 60" data-city="Recife - PE" data-vendor="Vintage Tech">
+          <div class="media media-blue">
+            <img src="../imagens/Screenshot_8.png" alt="">
+            <button class="fav-btn" title="Favoritar" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="card-body">
+            <span class="meta">Radiofonia</span>
+            <h5>Rádio Philco Transistore Anos 60</h5>
+            <div class="price">R$ 320</div>
+            <div class="meta small">por Vintage Tech <span class="sep">•</span> Recife - PE</div>
+            <button class="btn-details">Ver Detalhes</button>
+          </div>
+        </article>
+
+      </div><!-- /productsGrid -->
+    </section><!-- /content-area -->
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">
+          <div class="logo small"><a href="../index.html"><a href="../index.html">R</a></a></div>
+          <div class="footer-name"><a href="../index.html"><a href="../index.html">Relicário</a></a></div>
+        </div>
+        <p>O marketplace de itens raros e históricos onde cada peça conta uma história.</p>
+      </div>
+
+      <div>
+        <h4>Links Rápidos</h4>
+        <p><a href="../index.html">Home</a><br><a href="../catalogo/catalogo.html">Catálogo</a><br><a href="../vendas/vendas.html">Vender Item</a><br><a href="#">Entrar</a></p>
+      </div>
+
+      <div>
+        <h4><a href="../catalogo/catalogo.html">Categorias</a></h4>
+        <p><a href="../catalogo/catalogo.html">Numismática</a><br><a href="../catalogo/catalogo.html">Brinquedos Antigos</a><br><a href="../catalogo/catalogo.html">Vinil e Música</a><br><a href="../catalogo/catalogo.html">Radiofonia</a></p>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <p>contato@relicario.com.br<br>(11) 9999-9999<br>São Paulo, Brasil</p>
+      </div>
+    </div>
+
+    <div class="legal">© 2025 Relicário. Todos os direitos reservados.</div>
+  </footer>
+
+ 
+  <button id="backToTop" aria-label="Voltar ao topo">▲</button>
+
+  
+  <script src="../catalogo/catalogo.js"></script>
+</body>
+</html>

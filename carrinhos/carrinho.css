@@ -1,0 +1,169 @@
+@import url(../css/css.css);
+
+body {
+    margin: 0;
+    background: #faefdf;
+    font-family: "Poppins", sans-serif;
+}
+/* MAIN */
+.container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.title {
+    font-size: 35px;
+    color: #70431b;
+    margin-bottom: 25px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ITEM DO CARRINHO */
+.cart-item {
+    width: 65%;
+    background: white;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.item-image {
+    width: 120px;
+    border-radius: 8px;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-title {
+    margin: 0;
+    color: #70431b;
+    font-size: 20px;
+}
+
+.seller {
+    margin: 5px 0 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.quantity-control button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: #f0e4d3;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.item-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-weight: bold;
+    color: #70431b;
+}
+
+.remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* RESUMO */
+.summary {
+    width: 28%;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.summary-line,
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.free {
+    color: green;
+}
+
+.cupom-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.cupom-area input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.cupom-area button {
+    background: #e5d4b8;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-finalizar {
+    width: 100%;
+    background: #70431b;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-continuar {
+    display: block;
+    text-align: center;
+    background: #f1dec5;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #70431b;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background: #70431b;
+    color: white;
+    padding: 40px 5%;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 3px 0;
+}
+
